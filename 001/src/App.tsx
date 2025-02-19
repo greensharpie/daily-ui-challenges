@@ -19,9 +19,9 @@ const App = () => {
           </div>
 
           <div className="user-info-textinput-container">
-            <TextInput name="Name" label="name" placeholder="John Doe" />
-            <TextInput name="E-mail" label="e-mail" placeholder="jdoe@gmail.com" />
-            <TextInput name="Password" label="password" />
+            <TextInput name="name" label="Name" placeholder="John Doe" />
+            <TextInput name="e-mail" label="E-mail" placeholder="jdoe@gmail.com" />
+            <TextInput name="password" label="Password" />
             <CheckBox
               label="privacy-agreement"
               title="I agree to the Privacy&Policy"

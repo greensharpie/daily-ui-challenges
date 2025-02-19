@@ -54,6 +54,16 @@
   padding-top: 32px;
 }
 
+.main-heading {
+  font-family: cursive;
+  font-size: xx-large;
+}
+
+.sub-heading {
+  font-size: x-small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Responsive: Stack on smaller screens */
 @media (max-width: 768px) {
   .form-content {
