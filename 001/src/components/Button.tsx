@@ -5,7 +5,7 @@ interface ButtonProps {
   disabled?: boolean
 }
 
-export function Button({ title, onClick, disabled}: ButtonProps) {
+export const Button: React.FC<ButtonProps> = ({ title, onClick, disabled}) => {
   return (
     <button className='button' onClick={onClick} disabled={disabled}>
       {title} 
