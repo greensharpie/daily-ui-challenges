@@ -1,0 +1,36 @@
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 16px;
+}
+.checkbox-container input {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px; /* Slight rounding of the checkbox */
+  border: 1px solid black;
+  appearance: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.checkbox-container span {
+  font-size: 14px;
+}
+
+
+.checkbox-container input:checked {
+  background-color: black; /* Background turns black */
+  border-color: black;
+}
+
+.checkbox-container input:checked::after {
+  content: '✔';
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+}
