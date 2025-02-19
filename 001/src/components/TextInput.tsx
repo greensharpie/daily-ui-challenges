@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/TextInput.css'
 
 interface TextInputProps {
   name: string;
@@ -14,7 +15,7 @@ interface TextInputProps {
 export const TextInput: React.FC<TextInputProps> = ({ name, label, placeholder, type, required, maxLength, minLength, onChange }) => {
   return (
     <div>
-      <label htmlFor={name}>{label}</label>
+      <label className="label" htmlFor={name}>{label}</label>
       <input
         id={name}
         name={name}

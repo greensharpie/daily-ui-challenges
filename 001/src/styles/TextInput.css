@@ -1,0 +1,14 @@
+label {
+  display: block;
+  font-size: small;
+}
+
+input {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.input-container {
+  margin-bottom: 16px;
+}
