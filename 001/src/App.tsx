@@ -1,7 +1,10 @@
 import React from 'react';
+import { Button } from './components/Button';
 
 const App = () => {
-  return <div>Hello, Daily UI Challenge 001!</div>;
+  return <div>
+      <Button onClick={() =>  console.log('Pressed')}  title="I'm a button" />
+  </div>;
 };
 
 export default App;
