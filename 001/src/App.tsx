@@ -15,7 +15,7 @@ const App = () => {
       <TextInput name='Name' label='name' placeholder='John Doe' />
       <TextInput name='E-mail' label='e-mail' placeholder='jdoe@gmail.com' />
       <TextInput name='Password' label='password' />
-      <CheckBox label='privacy-agreement' title='I agree to the Privacy&Policy' />
+      <CheckBox label='privacy-agreement' title='I agree to the Privacy&Policy' onChange={() => console.log('Agreed to Privacy&Policy')} />
     </div>
 
   </div>;
