@@ -37,12 +37,21 @@
 }
 
 /* Adjustments for inputs and buttons */
-.sign-up-container,
-.user-info-textinput-container {
+.sign-up-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
   gap: 12px;
+}
+
+/* Align buttons side by side */
+.sign-up-container div {
+  display: flex;
+  gap: 12px;
+}
+
+.user-info-textinput-container {
+  padding-top: 32px;
 }
 
 /* Responsive: Stack on smaller screens */

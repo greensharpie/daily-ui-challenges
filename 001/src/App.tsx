@@ -12,8 +12,10 @@ const App = () => {
           <div className="sign-up-container">
             <span className="main-heading">Sign up</span>
             <span className="sub-heading">Welcome to Daily-UI - Let's create an account</span>
+            <div>
             <Button title="Log in with Google" onClick={() => console.log("Logging in with Google")} />
             <Button title="Log in with Apple" onClick={() => console.log("Logging in with Apple")} />
+            </div>
           </div>
 
           <div className="user-info-textinput-container">
