@@ -31,9 +31,11 @@
 /* Right side: Image */
 .right-section {
   flex: 1; /* Takes up half of the container */
-  background-image: url('');
+  background-image: url('/daily-ui-image.png');
   background-size: cover;
   background-position: center;
+  border-radius: 16px;
+  margin: 16px;
 }
 
 /* Adjustments for inputs and buttons */
