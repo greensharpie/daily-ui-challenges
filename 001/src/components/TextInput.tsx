@@ -12,7 +12,7 @@ interface TextInputProps {
   onChange?: () => void;
 }
 
-export const TextInput: React.FC<TextInputProps> = ({ name, label, placeholder, type, required, maxLength, minLength, onChange }) => {
+export const TextInput: React.FC<TextInputProps> = ({ name, label, placeholder, type ='text', required, maxLength, minLength, onChange }) => {
   return (
     <div>
       <label className="label" htmlFor={name}>{label}</label>
