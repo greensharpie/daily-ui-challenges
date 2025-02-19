@@ -6,6 +6,8 @@ interface TextInputProps {
   placeholder?: string;
   type?: string;
   required?: boolean;
+  maxLength?: number;
+  minLength?: number;
   onChange?: () => void;
 }
 
