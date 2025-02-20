@@ -1,12 +1,14 @@
 label {
   display: block;
   font-size: small;
+  padding: 4px;
 }
 
 input {
   border: 2px solid #ccc;
   border-radius: 12px;
   padding: 8px;
+  width: 100%;
 }
 
 .input-container {
