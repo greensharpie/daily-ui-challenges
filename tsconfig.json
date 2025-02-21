@@ -12,5 +12,5 @@
     "module": "esnext",
     "isolatedModules": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "001/src/**/*.ts", "001/src/**/*.tsx"]
+"include": ["src/**/*.ts", "src/**/*.tsx", "src/challenges/*/src/**/*.ts", "src/challenges/*/src/**/*.tsx"]
 }
