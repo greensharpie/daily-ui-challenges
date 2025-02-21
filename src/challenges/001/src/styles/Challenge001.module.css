@@ -1,5 +1,5 @@
 /* Center the form-container in the middle of the page */
-.form-container {
+.formContainer {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
@@ -7,7 +7,7 @@
 }
 
 /* Split into two equal sections */
-.form-content {
+.formContent {
   display: flex;
   width: 100%;
   max-width: 900px; /* Prevents it from stretching too wide */
@@ -19,7 +19,7 @@
 }
 
 /* Left side: Form elements */
-.left-section {
+.leftSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,9 +30,9 @@
 }
 
 /* Right side: Image */
-.right-section {
+.rightSection {
   flex: 1; /* Takes up half of the container */
-  background-image: url('/daily-ui-image.png');
+  background-image: url('/challenge-001/daily-ui-image.png');
   background-size: cover;
   background-position: center;
   border-radius: 16px;
@@ -40,7 +40,7 @@
 }
 
 /* Adjustments for inputs and buttons */
-.sign-up-container {
+.signUpContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,48 +48,48 @@
 }
 
 /* Align buttons side by side */
-.sign-up-container div {
+.signUpContainer div {
   display: flex;
   gap: 12px;
 }
 
-.user-info-textinput-container {
+.userInfoTextinputContainer {
   padding-top: 32px;
 }
 
-.main-heading {
+.mainHeading {
   font-family: cursive;
   font-size: xx-large;
 }
 
-.sub-heading {
+.subHeading {
   font-size: x-small;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.user-info-textinput-container {
+.userInfoTextinputContainer {
   padding-top: 32px;
   margin-left: -25%;
 }
 
 body {
-  background-image: url('/white-min.png'); 
+  background-image: url('/challenge-001/white-min.png'); 
   background-size: cover; 
   margin: 0;
 }
 
 /* Responsive: Stack on smaller screens */
 @media (max-width: 768px) {
-  .form-content {
+  .formContent {
     flex-direction: column; /* Stacks items vertically */
     height: auto;
   }
 
-  .left-section {
+  .leftSection {
     padding: 24px;
   }
 
-  .right-section {
+  .rightSection {
     height: 250px; /* Adjust height for mobile */
   }
 }
