@@ -9,12 +9,13 @@
 /* Split into two equal sections */
 .form-content {
   display: flex;
-  width: 100%; /* Adjust as needed */
+  width: 100%;
   max-width: 900px; /* Prevents it from stretching too wide */
-  height: 500px; /* Adjust for your needs */
+  height: 500px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   overflow: hidden;
+  background-color: white;
 }
 
 /* Left side: Form elements */
@@ -68,7 +69,13 @@
 
 .user-info-textinput-container {
   padding-top: 32px;
-  margin-left: -25%; /* Adjust as needed */
+  margin-left: -25%;
+}
+
+body {
+  background-image: url('/white-min.png'); 
+  background-size: cover; 
+  margin: 0;
 }
 
 /* Responsive: Stack on smaller screens */
