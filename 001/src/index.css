@@ -9,7 +9,7 @@
 /* Split into two equal sections */
 .form-content {
   display: flex;
-  width: 80%; /* Adjust as needed */
+  width: 100%; /* Adjust as needed */
   max-width: 900px; /* Prevents it from stretching too wide */
   height: 500px; /* Adjust for your needs */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -64,6 +64,11 @@
 .sub-heading {
   font-size: x-small;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.user-info-textinput-container {
+  padding-top: 32px;
+  margin-left: -25%; /* Adjust as needed */
 }
 
 /* Responsive: Stack on smaller screens */
