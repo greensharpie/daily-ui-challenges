@@ -1,5 +1,5 @@
 import React, { useState } from "react"; 
-import '../styles/CheckBox.css'
+import '../styles/Checkbox.css'
 interface CheckboxProps {
   label: string
   title: string
