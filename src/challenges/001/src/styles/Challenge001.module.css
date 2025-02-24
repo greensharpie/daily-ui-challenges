@@ -72,10 +72,11 @@
   margin-left: -25%;
 }
 
-body {
-  background-image: url('/challenge-001/white-min.png'); 
-  background-size: cover; 
-  margin: 0;
+.challengeBackground {
+  background-image: url('/challenge-001/white-min.png');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Responsive: Stack on smaller screens */
