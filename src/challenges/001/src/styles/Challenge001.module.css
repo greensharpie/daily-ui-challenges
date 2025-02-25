@@ -88,6 +88,10 @@
   padding: 1rem;
 }
 
+.challengeNavigation button {
+  margin: 0 2px;
+}
+
 /* Responsive: Stack on smaller screens */
 @media (max-width: 768px) {
   .formContent {
