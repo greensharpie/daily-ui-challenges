@@ -1,9 +1,10 @@
 /* Center the form-container in the middle of the page */
 .formContainer {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  height: 100vh; /* Full height of the viewport */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* Split into two equal sections */
@@ -72,10 +73,23 @@
   margin-left: -25%;
 }
 
-body {
-  background-image: url('/challenge-001/white-min.png'); 
-  background-size: cover; 
-  margin: 0;
+.challengeBackground {
+  background-image: url('/challenge-001/white-min.png');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.challengeNavigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.challengeNavigation button {
+  margin: 0 2px;
 }
 
 /* Responsive: Stack on smaller screens */
