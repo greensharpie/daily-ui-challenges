@@ -1,15 +1,38 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Challenge from './components/Challenge';
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useParams,
+  Navigate
+} from 'react-router-dom'
+import ChallengeList from './components/ChallengeList'
+import Challenge001 from './challenges/001/src/index'
+import Challenge002 from './challenges/002/src/index'
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/:challengeId" element={<Challenge />} />
-        <Route path="*" element={<Navigate to="/001" replace />} /> {/* Default to Challenge 001 */}
+        {/* Home page */}
+        <Route path="/" element={<ChallengeList />} />
+        <Route path="/challenges/:challengeId" element={<ChallengePage />} />
       </Routes>
     </Router>
-  );
+  )
 }
 
-export default App;
+const ChallengePage: React.FC = () => {
+  const { challengeId } = useParams()
+
+  const challenges: Record<string, React.FC> = {
+    '001': Challenge001,
+    '002': Challenge002
+  }
+
+  const ChallengeComponent = challenges[challengeId || '']
+
+  return ChallengeComponent ? <ChallengeComponent /> : <Navigate to="/" />
+}
+
+export default App

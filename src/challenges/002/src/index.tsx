@@ -1,9 +1,13 @@
 import React from 'react'
+import ChallengeNavigation from '../../../components/ChallengeNavigation'
 
-const App = () => {
+const Challenge002 = () => {
   return (
-    <span>Challenge #002</span>
+    <div>
+      <span>Challenge #002</span>
+      <ChallengeNavigation />
+    </div>
   )
 }
 
-export default App;
+export default Challenge002

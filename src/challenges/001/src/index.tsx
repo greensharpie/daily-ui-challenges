@@ -2,9 +2,10 @@ import React from 'react'
 import { Button } from './components/Button'
 import { TextInput } from './components/TextInput'
 import { CheckBox } from './components/Checkbox'
+import ChallengeNavigation from '../../../components/ChallengeNavigation'
 import styles from './styles/Challenge001.module.css'
 
-const App = () => {
+const Challenge001 = () => {
   return (
     <div className={styles.challengeBackground}>
       <div className={styles.formContainer}>
@@ -42,6 +43,7 @@ const App = () => {
                 onChange={() => console.log('Agreed to Privacy&Policy')}
               />
             </div>
+            <ChallengeNavigation />
           </div>
 
           {/* Right: Image Section */}
@@ -52,4 +54,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Challenge001
