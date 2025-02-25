@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 import ChallengeList from './challenges/ChallengeList'
 import Challenge001 from './challenges/001/src/index'
-import Challenge002 from './challenges/002/src/index'
+// import Challenge002 from './challenges/002/src/index'
 
 const App = () => {
   return (
@@ -26,8 +26,8 @@ const ChallengePage: React.FC = () => {
   const { challengeId } = useParams()
 
   const challenges: Record<string, React.FC> = {
-    '001': Challenge001,
-    '002': Challenge002
+    '001': Challenge001
+    // '002': Challenge002
   }
 
   const ChallengeComponent = challenges[challengeId || '']
