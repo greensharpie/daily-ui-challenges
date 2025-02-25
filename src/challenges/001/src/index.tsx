@@ -43,11 +43,13 @@ const Challenge001 = () => {
                 onChange={() => console.log('Agreed to Privacy&Policy')}
               />
             </div>
-            <ChallengeNavigation />
           </div>
 
           {/* Right: Image Section */}
           <div className={styles.rightSection}></div>
+        </div>
+        <div className={styles.challengeNavigation}>
+          <ChallengeNavigation />
         </div>
       </div>
     </div>
