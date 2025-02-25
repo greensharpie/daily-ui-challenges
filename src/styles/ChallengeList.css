@@ -1,0 +1,93 @@
+.home-page {
+  background-image: url('/challenge-001/daily-ui-homepage.png');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.challenge-list-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  border: 2px solid #ddd;
+}
+
+.challenge-list-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #222;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.challenge-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.challenge-list li {
+  background: #ffffff;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.challenge-list li:hover {
+  background: #f8f9fa;
+  transform: scale(1.02);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.challenge-list a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pagination-controls span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.pagination-controls button {
+  background: #007bff;
+  color: white;
+  border: 2px solid #0056b3;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+.pagination-controls button:disabled {
+  background: #ccc;
+  border-color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background: #0056b3;
+  border-color: #004494;
+}

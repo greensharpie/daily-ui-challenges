@@ -6,7 +6,7 @@ import {
   useParams,
   Navigate
 } from 'react-router-dom'
-import ChallengeList from './components/ChallengeList'
+import ChallengeList from './challenges/ChallengeList'
 import Challenge001 from './challenges/001/src/index'
 import Challenge002 from './challenges/002/src/index'
 
