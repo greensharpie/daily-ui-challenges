@@ -5,11 +5,11 @@ import '../styles/ChallengeList.css'
 
 const challenges = [
   { id: '001', title: 'Sign-up Form' },
-  { id: '002', title: 'Credit Card Checkout' },
-  { id: '003', title: 'Landing Page' },
-  { id: '004', title: 'Calculator UI' },
-  { id: '005', title: 'User Profile' },
-  { id: '006', title: 'Settings Page' }
+  { id: '002', title: 'Credit Card Checkout' }
+  // { id: '003', title: 'Landing Page' },
+  // { id: '004', title: 'Calculator UI' },
+  // { id: '005', title: 'User Profile' },
+  // { id: '006', title: 'Settings Page' }
 ]
 
 const ITEMS_PER_PAGE = 2
