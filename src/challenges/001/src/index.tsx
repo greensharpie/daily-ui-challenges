@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button } from './components/Button'
-import { TextInput } from './components/TextInput'
-import { CheckBox } from './components/Checkbox'
+import { Button } from '../../../components/Button'
+import { TextInput } from '../../../components/TextInput'
+import { CheckBox } from '../../../components/Checkbox'
 import ChallengeNavigation from '../../../components/ChallengeNavigation'
 import styles from './styles/Challenge001.module.css'
 

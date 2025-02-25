@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import { Button } from './Button'
 
 const challenges = ['001', '002', '003', '004', '005', '006']
 
@@ -19,19 +20,17 @@ const ChallengeNavigation = () => {
         marginTop: '20px'
       }}
     >
-      <button
+      <Button
+        title="Prev"
         disabled={!prevChallenge}
         onClick={() => navigate(`/challenges/${prevChallenge}`)}
-      >
-        Previous Challenge
-      </button>
-      <button onClick={() => navigate('/')}>Back to All Challenges</button>
-      <button
+      />
+      <Button title="Home" onClick={() => navigate('/')} />
+      <Button
+        title="Next"
         disabled={!nextChallenge}
         onClick={() => navigate(`/challenges/${nextChallenge}`)}
-      >
-        Next Challenge
-      </button>
+      />
     </div>
   )
 }

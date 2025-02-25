@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Button } from './Button'
 
 const challenges = [
   { id: '001', title: 'Sign-up Form' },
@@ -32,22 +33,20 @@ const ChallengeList = () => {
           </li>
         ))}
       </ul>
-      <button
+      <Button
+        title="Previous"
         disabled={currentPage === 1}
         onClick={() => setCurrentPage((prev) => prev - 1)}
-      >
-        Previous
-      </button>
+      />
       <span>
         {' '}
         Page {currentPage} of {totalPages}{' '}
       </span>
-      <button
+      <Button
+        title="Next"
         disabled={currentPage === totalPages}
         onClick={() => setCurrentPage((prev) => prev + 1)}
-      >
-        Next
-      </button>
+      />
     </div>
   )
 }
