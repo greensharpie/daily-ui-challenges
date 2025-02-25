@@ -1,5 +1,5 @@
 .home-page {
-  background-image: url('/challenge-001/daily-ui-homepage.png');
+  background-image: url('/challenge-001/daily-ui-homepage2.png');
   background-size: cover;
   background-position: center;
   width: 100vw;
@@ -76,7 +76,6 @@
   border: 2px solid #0056b3;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
-  cursor: pointer;
   transition: all 0.2s;
   font-weight: bold;
 }
@@ -84,7 +83,6 @@
 .pagination-controls button:disabled {
   background: #ccc;
   border-color: #aaa;
-  cursor: not-allowed;
 }
 
 .pagination-controls button:hover:not(:disabled) {
